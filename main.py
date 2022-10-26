@@ -118,7 +118,7 @@ if __name__ == "__main__":
         for turn in range(1, TURNS_TERMO):
             if turn == 1:
                 while True:
-                    guess = input("\n\33[0m" + "Escolha a palavra inicial: " + "\33[94m")
+                    guess = input("\n\33[0m" + "Escolha a palavra inicial: " + "\33[93m")
                     if len(guess) == WORD_SIZE and guess.isalpha():
                         break
                     else:
@@ -215,7 +215,7 @@ if __name__ == "__main__":
                 word_1 = word_2 = True
                 post_find = False
                 while True:
-                    guess = input("\n\33[0m" + "Escolha a palavra inicial: " + "\33[94m")
+                    guess = input("\n\33[0m" + "Escolha a palavra inicial: " + "\33[93m")
                     if len(guess) == WORD_SIZE and guess.isalpha():
                         break
                     else:
@@ -341,7 +341,8 @@ if __name__ == "__main__":
                             post_find = True
                         print()
                 elif len(valid_solutions_1) == 0:
-                    print("\n\n🔸 [1] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
+                    if word_1:
+                        print("\n\n🔸 [1] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
                     break
                 else:
                     print("\n")
@@ -381,7 +382,8 @@ if __name__ == "__main__":
                             post_find = True
                         print()
                 elif len(valid_solutions_2) == 0:
-                    print("\n\n🔹 [2] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
+                    if word_2:
+                        print("\n\n🔹 [2] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
                     break
                 else:
                     print("\n")
@@ -408,7 +410,7 @@ if __name__ == "__main__":
                 post_list = []
                 post_find = False
                 while True:
-                    guess = input("\n\33[0m" + "Escolha a palavra inicial: " + "\33[94m")
+                    guess = input("\n\33[0m" + "Escolha a palavra inicial: " + "\33[93m")
                     if len(guess) == WORD_SIZE and guess.isalpha():
                         break
                     else:
@@ -670,7 +672,8 @@ if __name__ == "__main__":
                             post_list.append(solution_1)
                         print()
                 elif len(valid_solutions_1) == 0:
-                    print("\n\n🟠 [1] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
+                    if word_1:
+                        print("\n\n🟠 [1] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
                     break
                 else:
                     print("\n")
@@ -710,7 +713,8 @@ if __name__ == "__main__":
                             post_list.append(solution_2)
                         print()
                 elif len(valid_solutions_2) == 0:
-                    print("\n\n🔵 [2] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
+                    if word_2:
+                        print("\n\n🔵 [2] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
                     break
                 else:
                     print("\n")
@@ -750,7 +754,8 @@ if __name__ == "__main__":
                             post_list.append(solution_3)
                         print()
                 elif len(valid_solutions_3) == 0:
-                    print("\n\n🟣 [3] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
+                    if word_3:
+                        print("\n\n🟣 [3] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
                     break
                 else:
                     print("\n")
@@ -790,7 +795,8 @@ if __name__ == "__main__":
                             post_list.append(solution_4)
                         print()
                 elif len(valid_solutions_4) == 0:
-                    print("\n\n🟤 [4] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
+                    if word_4:
+                        print("\n\n🟤 [4] Palavra ➜ \33[91m" + "❌ Nenhuma solução encontrada!" + "\33[0m")
                     break
                 else:
                     print("\n")
